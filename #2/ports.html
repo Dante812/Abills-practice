@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>index</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+        <div class="conteiner-fluid m-2 border border-secondary bg-gray">
+            <div class="row m-1">
+                <div class="col-md-12">
+                    <div class="text-white text-center bg-primary">Доп. информация по свичу</div>
+                    <div class="border border-info">
+                        <table class="table m-0 p-0">
+                            <tbody>
+                                <tr>
+                                    <th>Описание:</th>
+                                    <td id="description">DES-3200-26/C1 Fast Ethernet Switch</td>
+                                </tr>
+                                <tr>
+                                    <th>Положение:</th>
+                                    <td id="position">Lesnoy_20_1par_2</td>
+                                </tr>
+                                <tr>
+                                    <th>Прошивка:</th>
+                                    <td id="firmware">4.37.B013</td>
+                                </tr>
+                                <tr>
+                                    <th>Ревизия:</th>
+                                    <td id="audit">C1</td>
+                                </tr>
+                                <tr>
+                                    <th>IP:</th>
+                                    <td id="IP">10.11.71.93</td>
+                                </tr>
+                                <tr>
+                                    <th>MAC:</th>
+                                    <td id="MAC">90:94:e4:20:35:80</td>
+                                </tr>
+                                <tr>
+                                    <th>hiVlan:</th>
+                                    <td id="hiVlan">3768</td>
+                                </tr>
+                                <tr>
+                                    <th>loVlan:</th>
+                                    <td id="loVlan">3100</td>
+                                </tr>
+                                <tr>
+                                    <th>Адрес:</th>
+                                    <td>
+                                        <div id="address">пр. Лесной 20 под. 1</div>
+                                        <span class="text-muted small">свич №1</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <button data-toggle="modal" data-target="#switchModal" class="btn-warning btn-sm btn-block p-0 rounded-0  text-primary">Редактировать свитч</button>
+                </div>     
+            </div>
+
+            <div class="row m-1">
+                <div class="col-12"><span>Управление</span>
+                    <button class="btn-warning btn-sm btn-block mt-md-1 rounded-0 text-left text-primary">Перезагрузить</button>
+                    <button class="btn-warning btn-sm btn-block mt-md-1 rounded-0 text-left text-primary">Попингуй</button>
+                    <button class="btn-warning btn-sm btn-block mt-md-1 rounded-0 text-left text-primary">MAC-адреса с портов</button>
+                    <button class="btn-warning btn-sm btn-block mt-md-1 rounded-0 text-left text-primary">Разположение свитча</button>
+                    <button class="btn-warning btn-sm btn-block mt-md-1 rounded-0 text-left text-primary">Консоль телнет</button>
+                    <button class="btn-danger btn-sm btn-block mt-md-1 rounded-0 text-left text-primary">Отхуярить всех абонов ногами в живот</button>
+                </div>
+            </div>
+
+            <div class="row m-0">
+                <div class="col-xl-12 mb-1 bg-primary text-center text-white">D-Link DES-3200-26</div>
+                <div class="col-xl-12 mb-2 bg-primary text-center text-white">Свободние порти:</div>
+            </div>
+
+
+            <div class="col-md-12 mr-1 ml-1">
+                <div class="row m-1">
+                    <!--  -->
+                    <div class="col-lg col-md-4 col-sm-12 border">
+                        <div class="row">
+                            <div class="col-2 bg-success">
+                                <span>1</span>
+                            </div>
+                            <div class="col-10">
+                                <div class="port_info">
+                                    <span class="font-weight-bold text-primary">Шишко Василий Николаевич (8296)</span>
+                                    <br>
+                                    <span class="text-muted small">пр. Лесной 20, кв. 96</span> 
+                                </div>
+                                <div class="port_speed">
+                                    <span class="text-success">100</span>
+                                    <span>Mbps</span>
+                                    <button class="col-12 m-0 p-0">Вкл</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-lg col-md-4 col-sm-12 border">
+                        <div class="row">
+                            <div class="col-2 bg-danger">
+                                <span>2</span>
+                            </div>
+                            <div class="col-10">
+                                <div class="port_info">
+                                    <span class="font-weight-bold text-primary">Шишко Василий Николаевич (8296)</span>
+                                    <br>
+                                    <span class="text-muted small">пр. Лесной 20, кв. 96</span> 
+                                </div>
+                                <div class="port_speed">
+                                    <span class="text-danger">0</span>
+                                    <span>Mbps</span>
+                                    <button class="col-12 m-0 p-0">Вкл</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-lg col-md-4 col-sm-12 border">
+                        <div class="row">
+                            <div class="col-2 bg-danger">
+                                <span>3</span>
+                            </div>
+                            <div class="col-10">
+                                <div class="port_info">
+                                    <span class="font-weight-bold text-primary">Бережнова Елена Владимировна (7945)</span>
+                                    <br>
+                                    <span class="text-muted small">пр. Лесной 20, кв. 47</span> 
+                                </div>
+                                <div class="port_speed">
+                                    <span class="text-danger">0</span>
+                                    <span>Mbps</span>
+                                    <button class="col-12 m-0 p-0">Вкл</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-lg col-md-4 col-sm-12 border">
+                        <div class="row">
+                            <div class="col-2 bg-success">
+                                <span>4</span>
+                            </div>
+                            <div class="col-10">
+                                <div class="port_info">
+                                    <span class="font-weight-bold text-primary">Шишко Василий Николаевич (8296)</span>
+                                    <br>
+                                    <span class="text-muted small">пр. Лесной 20, кв. 96</span> 
+                                </div>
+                                <div class="port_speed">
+                                    <span class="text-success">100</span>
+                                    <span>Mbps</span>
+                                    <button class="col-12 m-0 p-0">Вкл</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-lg col-md-4 col-sm-12 border">
+                        <div class="row">
+                            <div class="col-2 bg-success">
+                                <span>5</span>
+                            </div>
+                            <div class="col-10">
+                                <div class="port_info">
+                                    <span class="font-weight-bold text-primary">Шишко Василий Николаевич (8296)</span>
+                                    <br>
+                                    <span class="text-muted small">пр. Лесной 20, кв. 96</span> 
+                                </div>
+                                <div class="port_speed">
+                                    <span class="text-success">100</span>
+                                    <span>Mbps</span>
+                                    <button class="col-12 m-0 p-0">Вкл</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+
+
+            <div class="col-md-12 mr-1 ml-1">
+                <div class="row m-1">
+                    <!--  -->
+                    <div class="col-lg col-md-4 col-sm-12 border">
+                        <div class="row">
+                            <div class="col-2 bg-success">
+                                <span class="">6</span>
+                            </div>
+                            <div class="col-10">
+                                <div class="port_info">
+                                    <span class="font-weight-bold text-primary">Шишко Василий Николаевич (8296)</span>
+                                    <br>
+                                    <span class="text-muted small">пр. Лесной 20, кв. 96</span> 
+                                </div>
+                                <div class="port_speed">
+                                    <span class="text-success">100</span>
+                                    <span>Mbps</span>
+                                    <button class="col-12 m-0 p-0">Вкл</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-lg col-md-4 col-sm-12 border">
+                        <div class="row">
+                            <div class="col-2 bg-success">
+                                <span>7</span>
+                            </div>
+                            <div class="col-10">
+                                <div class="port_info">
+                                    <span class="font-weight-bold text-primary">Шишко Василий Николаевич (8296)</span>
+                                    <br>
+                                    <span class="text-muted small">пр. Лесной 20, кв. 96</span> 
+                                </div>
+                                <div class="port_speed">
+                                    <span class="text-success">100</span>
+                                    <span>Mbps</span>
+                                    <button class="col-12 m-0 p-0">Вкл</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-lg col-md-4 col-sm-12 border">
+                        <div class="row">
+                            <div class="col-2 bg-danger">
+                                <span>8</span>
+                            </div>
+                            <div class="col-10">
+                                <div class="port_info">
+                                    <span class="font-weight-bold text-primary">Шишко Василий Николаевич (8296)</span>
+                                    <br>
+                                    <span class="text-muted small">пр. Лесной 20, кв. 96</span> 
+                                </div>
+                                <div class="port_speed">
+                                    <span class="text-danger">0</span>
+                                    <span>Mbps</span>
+                                    <button class="col-12 m-0 p-0">Вкл</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-lg col-md-4 col-sm-12 border">
+                        <div class="row">
+                            <div class="col-2 bg-success">
+                                <span>9</span>
+                            </div>
+                            <div class="col-10">
+                                <div class="port_info">
+                                    <span class="font-weight-bold text-primary">Шишко Василий Николаевич (8296)</span>
+                                    <br>
+                                    <span class="text-muted small">пр. Лесной 20, кв. 96</span> 
+                                </div>
+                                <div class="port_speed">
+                                    <span class="text-success">100</span>
+                                    <span>Mbps</span>
+                                    <button class="col-12 m-0 p-0">Вкл</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-lg col-md-4 col-sm-12 border">
+                        <div class="row">
+                            <div class="col-2 bg-success">
+                                <span>10</span>
+                            </div>
+                            <div class="col-10">
+                                <div class="">
+                                    <span class="font-weight-bold text-primary">Шишко Василий Николаевич (8296)</span>
+                                    <br>
+                                    <span class="text-muted small">пр. Лесной 20, кв. 96</span> 
+                                </div>
+                                <div class="">
+                                    <span class="text-success">100</span>
+                                    <span>Mbps</span>
+                                    <button class="col-12 m-0 p-0">Вкл</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+
+
+            <div class="col-md-12 mr-1 ml-1">
+                <div class="row m-1">
+                    <!--  -->
+                    <div class="col-lg col-md-4 col-sm-12 border">
+                        <div class="row">
+                            <div class="col-2 bg-danger">
+                                <span>11</span>
+                            </div>
+                            <div class="col-10">
+                                <div class="">
+                                    <span class="font-weight-bold text-primary">Шишко Василий Николаевич (8296)</span>
+                                    <br>
+                                    <span class="text-muted small">пр. Лесной 20, кв. 96</span> 
+                                </div>
+                                <div class="">
+                                    <span class="text-danger">0</span>
+                                    <span>Mbps</span>
+                                    <button class="col-12 m-0 p-0">Вкл</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-lg col-md-4 col-sm-12 border">
+                        <div class="row">
+                            <div class="col-2 bg-success">
+                                <span>12</span>
+                            </div>
+                            <div class="col-10">
+                                <div class="">
+                                    <span class="font-weight-bold text-primary">Шишко Василий Николаевич (8296)</span>
+                                    <br>
+                                    <span class="text-muted small">пр. Лесной 20, кв. 96</span> 
+                                </div>
+                                <div class="">
+                                    <span class="text-success">100</span>
+                                    <span>Mbps</span>
+                                    <button class="col-12 m-0 p-0">Вкл</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-lg col-md-4 col-sm-12 border">
+                        <div class="row">
+                            <div class="col-2 bg-success">
+                                <span>13</span>
+                            </div>
+                            <div class="col-10">
+                                <div class="">
+                                    <span class="font-weight-bold text-primary">Шишко Василий Николаевич (8296)</span>
+                                    <br>
+                                    <span class="text-muted small">пр. Лесной 20, кв. 96</span> 
+                                </div>
+                                <div class="">
+                                    <span class="text-success">100</span>
+                                    <span>Mbps</span>
+                                    <button class="col-12 m-0 p-0">Вкл</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-lg col-md-4 col-sm-12 border">
+                        <div class="row">
+                            <div class="col-2 bg-success">
+                                <span>14</span>
+                            </div>
+                            <div class="col-10">
+                                <div class="">
+                                    <span class="font-weight-bold text-primary">Шишко Василий Николаевич (8296)</span>
+                                    <br>
+                                    <span class="text-muted small">пр. Лесной 20, кв. 96</span> 
+                                </div>
+                                <div class="">
+                                    <span class="text-success">100</span>
+                                    <span>Mbps</span>
+                                    <button class="col-12 m-0 p-0">Вкл</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-lg col-md-4 col-sm-12 border">
+                        <div class="row">
+                            <div class="col-2 bg-success">
+                                <span>15</span>
+                            </div>
+                            <div class="col-10">
+                                <div class="">
+                                    <span class="font-weight-bold text-primary">Шишко Василий Николаевич (8296)</span>
+                                    <br>
+                                    <span class="text-muted small">пр. Лесной 20, кв. 96</span> 
+                                </div>
+                                <div class="">
+                                    <span class="text-success">100</span>
+                                    <span>Mbps</span>
+                                    <button class="col-12 m-0 p-0">Вкл</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+
+
+            <div class="col-md-12 mr-1 ml-1">
+                <div class="row m-1">
+                    <!--  -->
+                    <div class="col-lg col-md-4 col-sm-12 border">
+                        <div class="row">
+                            <div class="col-2 bg-danger">
+                                <span>16</span>
+                            </div>
+                            <div class="col-10">
+                                <div class="">
+                                    <span class="font-weight-bold text-primary">Шишко Василий Николаевич (8296)</span>
+                                    <br>
+                                    <span class="text-muted small">пр. Лесной 20, кв. 96</span> 
+                                </div>
+                                <div class="">
+                                    <span class="text-danger">0</span>
+                                    <span>Mbps</span>
+                                    <button class="col-12 m-0 p-0">Вкл</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-lg col-md-4 col-sm-12 border">
+                        <div class="row">
+                            <div class="col-2 bg-success">
+                                <span>17</span>
+                            </div>
+                            <div class="col-10">
+                                <div class="">
+                                    <span class="font-weight-bold text-primary">Шишко Василий Николаевич (8296)</span>
+                                    <br>
+                                    <span class="text-muted small">пр. Лесной 20, кв. 96</span> 
+                                </div>
+                                <div class="">
+                                    <span class="text-success">100</span>
+                                    <span>Mbps</span>
+                                    <button class="col-12 m-0 p-0">Вкл</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-lg col-md-4 col-sm-12 border">
+                        <div class="row">
+                            <div class="col-2 bg-success">
+                                <span>18</span>
+                            </div>
+                            <div class="col-10">
+                                <div class="">
+                                    <span class="font-weight-bold text-primary">Шишко Василий Николаевич (8296)</span>
+                                    <br>
+                                    <span class="text-muted small">пр. Лесной 20, кв. 96</span> 
+                                </div>
+                                <div class="">
+                                    <span class="text-success">100</span>
+                                    <span>Mbps</span>
+                                    <button class="col-12 m-0 p-0">Вкл</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-lg col-md-4 col-sm-12 border">
+                        <div class="row">
+                            <div class="col-2 bg-danger">
+                                <span>19</span>
+                            </div>
+                            <div class="col-10">
+                                <div class="">
+                                    <span class="font-weight-bold text-primary">Шишко Василий Николаевич (8296)</span>
+                                    <br>
+                                    <span class="text-muted small">пр. Лесной 20, кв. 96</span> 
+                                </div>
+                                <div class="">
+                                    <span class="text-danger">0</span>
+                                    <span>Mbps</span>
+                                    <button class="col-12 m-0 p-0">Вкл</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-lg col-md-4 col-sm-12 border">
+                        <div class="row">
+                            <div class="col-2 bg-success">
+                                <span>20</span>
+                            </div>
+                            <div class="col-10">
+                                <div class="">
+                                    <span class="font-weight-bold text-primary">Шишко Василий Николаевич (8296)</span>
+                                    <br>
+                                    <span class="text-muted small">пр. Лесной 20, кв. 96</span> 
+                                </div>
+                                <div class="">
+                                    <span class="text-success">100</span>
+                                    <span>Mbps</span>
+                                    <button class="col-12 m-0 p-0">Вкл</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+        </div>
+    <!-- форма для зміни даних -->
+        <div class="modal fade" id="switchModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                   <span>Редактировать свитч</span>
+                </div>
+
+                <div class="modal-body">
+                        <div class="form-group">
+                            <label for="Description">Описание:</label>
+                            <input type="text" class="form-control form-control-sm" id="modalNewDescription">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Position">Положение:</label>
+                            <input type="text" class="form-control form-control-sm" id="modalNewPosition">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Firmware">Прошивка:</label>
+                            <input type="text" class="form-control form-control-sm" id="modalNewFirmware">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Audit">РевизияMAC:</label>
+                            <input type="text" class="form-control form-control-sm" id="modalNewAudit">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="IP">IP:</label>
+                            <input type="text" class="form-control form-control-sm" id="modalNewIP">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="MAC">MAC:</label>
+                            <input type="text" class="form-control form-control-sm" id="modalNewMAC">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="HiVlan">hiVlan:</label>
+                            <input type="text" class="form-control form-control-sm" id="modalNewHiVlan">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="LoVlan">loVlan:</label>
+                            <input type="text" class="form-control form-control-sm" id="modalNewLoVlan">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="Address">Адрес:</label>
+                            <input type="text" class="form-control form-control-sm" id="modalNewAddress">
+                        </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Закрить</button>
+                    <button type="button" id="switchModalSave" onclick="change()"  data-dismiss="modal" class="btn btn-success">Зберегти</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    <!--підключаєм файл js для зміни даних користовача  -->
+    <script src="userChange.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
