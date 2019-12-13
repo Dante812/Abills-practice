@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>index</title>
+    <title>ports</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,57 +10,57 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-        <div class="conteiner-fluid m-2 border border-secondary bg-gray">
-            <div class="row m-1">
-                <div class="col-md-12">
-                    <div class="text-white text-center bg-primary">Доп. информация по свичу</div>
-                    <div class="border border-info">
-                        <table class="table m-0 p-0">
-                            <tbody>
-                                <tr>
-                                    <th>Описание:</th>
-                                    <td id="description">DES-3200-26/C1 Fast Ethernet Switch</td>
-                                </tr>
-                                <tr>
-                                    <th>Положение:</th>
-                                    <td id="position">Lesnoy_20_1par_2</td>
-                                </tr>
-                                <tr>
-                                    <th>Прошивка:</th>
-                                    <td id="firmware">4.37.B013</td>
-                                </tr>
-                                <tr>
-                                    <th>Ревизия:</th>
-                                    <td id="audit">C1</td>
-                                </tr>
-                                <tr>
-                                    <th>IP:</th>
-                                    <td id="IP">10.11.71.93</td>
-                                </tr>
-                                <tr>
-                                    <th>MAC:</th>
-                                    <td id="MAC">90:94:e4:20:35:80</td>
-                                </tr>
-                                <tr>
-                                    <th>hiVlan:</th>
-                                    <td id="hiVlan">3768</td>
-                                </tr>
-                                <tr>
-                                    <th>loVlan:</th>
-                                    <td id="loVlan">3100</td>
-                                </tr>
-                                <tr>
-                                    <th>Адрес:</th>
-                                    <td>
-                                        <div id="address">пр. Лесной 20 под. 1</div>
-                                        <span class="text-muted small">свич №1</span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+        <div class="container-fluid m-2 border border-secondary">
+
+            <div class="container-fluid">
+
+                <div class="row ml-1 mr-1">
+                    <div class="col-md-12 text-white text-center bg-primary">
+                            Доп. информация по свичу
                     </div>
-                    <button data-toggle="modal" data-target="#switchModal" class="btn-warning btn-sm btn-block p-0 rounded-0  text-primary">Редактировать свитч</button>
-                </div>     
+                </div>
+
+                <div class="row ml-1 mr-1">
+                    <div class="col-md-4 col-sm-12 border font-weight-bold">Описание:</div>
+                    <div class="col-md-8 col-sm-12 border" id="description">DES-3200-26/C1 Fast Ethernet Switch</div>
+                </div>
+                <div class="row ml-1 mr-1">
+                    <div class="col-md-4 col-sm-12 border font-weight-bold">Положение:</div>
+                    <div class="col-md-8 col-sm-12 border" id="position">Lesnoy_20_1par_2</div>
+                </div>
+                <div class="row ml-1 mr-1">
+                    <div class="col-md-4 col-sm-12 border font-weight-bold">Прошивка:</div>
+                    <div class="col-md-8 col-sm-12 border" id="firmware">4.37.B013</div>
+                </div>
+                <div class="row ml-1 mr-1">
+                    <div class="col-md-4 col-sm-12 border font-weight-bold">Ревизия:</div>
+                    <div class="col-md-8 col-sm-12 border" id="audit">C1</div>
+                </div>
+                <div class="row ml-1 mr-1">
+                    <div class="col-md-4 col-sm-12 border font-weight-bold">IP:</div>
+                    <div class="col-md-8 col-sm-12 border" id="IP">10.11.71.93</div>
+                </div>
+                <div class="row ml-1 mr-1">
+                    <div class="col-md-4 col-sm-12 border font-weight-bold">MAC:</div>
+                    <div class="col-md-8 col-sm-12 border" id="MAC">90:94:e4:20:35:80</div>
+                </div>
+                <div class="row ml-1 mr-1">
+                    <div class="col-md-4 col-sm-12 border font-weight-bold">hiVlan:</div>
+                    <div class="col-md-8 col-sm-12 border" id="hiVlan">3768</div>
+                </div>
+                <div class="row ml-1 mr-1">
+                    <div class="col-md-4 col-sm-12 border font-weight-bold">loVlan:</div>
+                    <div class="col-md-8 col-sm-12 border" id="loVlan">3100</div>
+                </div>
+                <div class="row ml-1 mr-1">
+                    <div class="col-md-4 col-sm-12 border font-weight-bold">Адрес:</div>
+                    <div class="col-md-8 col-sm-12 border">
+                        <span id="address">пр. Лесной 20 под. 1</span>
+                        <br>
+                        <span class="text-muted small">свич №1</span>
+                    </div>
+                </div>
+                <button data-toggle="modal" data-target="#switchModal" class="btn-warning btn-sm btn-block p-0 rounded-0  text-primary">Редактировать свитч</button>
             </div>
 
             <div class="row m-1">
